@@ -30,6 +30,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by 2YSP on 2020/12/21
+ *  1、ship-gate-example 启动的时候，先调用 AutoRegisterListener 的构造方法
+ *  2、然后回调 onApplicationEvent 的方法进行事件的注册和 Hook 的关闭
  */
 public class AutoRegisterListener implements ApplicationListener<ContextRefreshedEvent> {
 
